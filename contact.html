@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.9/dist/tailwind.min.css">
+    <!--Link Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+     
+    <link rel="stylesheet" href="style.css"> 
+
+    <!--Link Font Awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Nostra</title>
+</head>
+
+<body>
+    <nav id="offer" class="bg-black text-white flex justify-evenly p-1 text-lg">
+        <p>Sign Up and <strong>GET 20% OFF</strong> for your first Order</p>
+        <p id="close" class="inline cursor-pointer">X</p>
+    </nav>
+
+    <!-- heading & Navbar -->
+    <nav class="flex justify-between px-5 pt-5 sticky top-0 items-center z-20 bg-white">
+        <h1 class="text-2xl font-extrabold">NOSTRA</h1>
+
+        <svg id="menuitem" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+
+        <ul class="flex gap-8 hidden md:flex">
+            <li class="hover:underline">
+                <a href="/">Home</a>
+            </li>
+            <li class="hover:underline">
+                <a href="#new-arrival">New Arrival</a>
+            </li>
+            <li class="hover:underline">
+                <a href="#most-wanted">Most Wanted</a>
+            </li>
+            <li class="hover:underline">
+                <a href="/collection.html">Collections</a>
+            </li>
+            <li class="hover:underline">
+                <a href="/contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- side nav -->
+
+    <section id="sidenav" class="bg-black fixed z-30 top-0 transition-all duration-1000"
+        style="width: 50%; height:100vh; left: -50%;">
+
+        <div class="text-right p-5">
+            <p id="closenav" class="inline cursor-pointer text-white">X</p>
+        </div>
+        <ul class="flex flex-col gap-8 m-4 text-white md:flex">
+            <li class="hover:underline">
+                <a href="/">Home</a>
+            </li>
+            <li class="hover:underline">
+                <a href="#new-arrival">New Arrival</a>
+            </li>
+            <li class="hover:underline">
+                <a href="#most-wanted">Most Wanted</a>
+            </li>
+            <li class="hover:underline">
+                <a href="/collection.html">Collections</a>
+            </li>
+            <li class="hover:underline">
+                <a href="/contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </section> 
+    
+    <!-- component -->
+
+    <div class="flex items-center justify-center m-20 p-12 bg-black text-white rounded-lg">
+        <!-- Author: FormBold Team -->
+        <!-- Learn More: https://formbold.com -->
+        <div class="mx-auto w-full max-w-[550px]">
+            <form>
+                <div class="mb-5">
+                    <label for="name" class="mb-3 block text-base font-medium text-[#07074D]">
+                        Full Name
+                    </label>
+                    <input type="text" name="name" id="name" placeholder="Full Name"
+                        class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                </div>
+                <div class="mb-5">
+                    <label for="email" class="mb-3 block text-base font-medium text-[#07074D]">
+                        Email Address
+                    </label>
+                    <input type="email" name="email" id="email" placeholder="example@domain.com"
+                        class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                </div>
+                <div class="mb-5">
+                    <label for="subject" class="mb-3 block text-base font-medium text-[#07074D]">
+                        Subject
+                    </label>
+                    <input type="text" name="subject" id="subject" placeholder="Enter your subject"
+                        class="w-full rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md" />
+                </div>
+                <div class="mb-5">
+                    <label for="message" class="mb-3 block text-base font-medium text-[#07074D]">
+                        Message
+                    </label>
+                    <textarea rows="4" name="message" id="message" placeholder="Type your message"
+                        class="w-full resize-none rounded-md border border-[#e0e0e0] bg-white py-3 px-6 text-base font-medium text-[#6B7280] outline-none focus:border-[#6A64F1] focus:shadow-md"></textarea>
+                </div>
+                <div>
+                    <button class="bg-white text-xl text-black p-3 rounded">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <section class="p-5 text-center">
+        <h1 class="text-4xl font-bold items-center mt-5">Join our News Letter</h1>
+        <p class="text-2xl my-2">Signup for our email newspaper to get exclusive discounts, updates and more</p>
+        <input type="text" class="border-black border-4 m-3 w-2/4"><br>
+        <button class="bg-black text-white text-xl p-2 mt-3 rounded">Subscribe <i
+                class="fa-solid fa-arrow-right"></i></button>
+    </section>
+ 
+    <footer class="py-10 bg-black text-white px-5">
+        <h1 class="text-3xl font-extrabold my-5">NOSTRA</h1>
+        <p class="text-2xl">The Standard chunk of Lorem ipsum used since the 2000s is reprodused below for those interest.</p>
+        <div class="my-5 text-2xl flex gap-7">
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+            <i class="fa-brands fa-pinterest"></i>
+            <i class="fa-brands fa-instagram"></i>
+        </div>
+        <p class="my-5 text-2xl">&copy;2021 nastro.com</p>
+    </footer>
+</body>
+
+<script src="contact.js"></script>
+
+</html>
